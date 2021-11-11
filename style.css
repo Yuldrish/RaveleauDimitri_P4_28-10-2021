@@ -677,18 +677,8 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 11px;
 }
-
-.remerciment {
-    font-size: 20px;
-    font-style: italic;
-}
-
-.NB {
-    font-size: 14px;
-}
-
 
 .tight-width-whitespace {
     max-width: 600px;
