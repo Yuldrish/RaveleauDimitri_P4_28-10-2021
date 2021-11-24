@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -516,8 +516,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
-    z-index: 500;
+   z-index: 500;
     transition: all .3s ease-in-out;
 }
 
@@ -584,6 +583,9 @@ a[data-lightbox]:hover img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
 }
 
 .close-lightbox {
@@ -639,6 +641,23 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
+.picture-size {
+    width: 270px;
+    max-width: 320px;
+    height: 270px;
+    max-height: 320px;
+}
+
+.logo-size {
+    width: 100px;
+    height: 100px;
+}
+
+.banner-size {
+    width: 214px;
+    height: 40px;
+}
+
 h1,
 h2,
 h3,
@@ -651,7 +670,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #4A403C!important;
 }
 
 .container {
@@ -677,7 +696,16 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
+}
+
+.remerciment {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.NB {
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -701,7 +729,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 25px auto;
 }
 
 h2 {
@@ -749,11 +777,11 @@ h4 {
 }
 
 .avatar {
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.247);
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.699);
     padding: 40px 40px 40px 40px;
 }
 
@@ -778,9 +806,21 @@ h4 {
     color: #F3976C!important;
 }
 
+.tc-black {
+    color: #000000!important;
+}
+
+.tp-sticky {
+    position: sticky;
+}
+
+.tc-darkgrey {
+    color: #4A403C!important;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #4A403C!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -809,20 +849,12 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +880,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +904,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +912,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
